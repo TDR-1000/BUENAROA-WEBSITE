@@ -38,7 +38,7 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
-
+{{-- COMMENT --}}
 <body>
 
   <!-- ======= Header ======= -->
