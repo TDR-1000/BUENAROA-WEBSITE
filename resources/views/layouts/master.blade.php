@@ -28,7 +28,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Vlava
@@ -106,7 +106,7 @@
 
         <div class="row content">
           <div class="col-lg-6">
-            <h2>About Us</h2>
+            <h2>About Us!</h2>
             <h3>We mainly focuses in providing Event and Catering Services.</h3>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
