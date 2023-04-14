@@ -1,7 +1,7 @@
 <?php
 //PHP code to sent contact form to both client and owner.
 if (isset($_POST['submit'])){ //Check if user enter data
-    $mailto = "carylsntg@gmail.com"; //Company email
+    $mailto = "email@buenaroa.store"; //Company email
     //Client Sending Message
     
     $from = $_POST['email']; //Senders Email Address
