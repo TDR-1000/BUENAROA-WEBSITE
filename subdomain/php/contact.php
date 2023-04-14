@@ -56,11 +56,11 @@ if(isset($_POST["submit"])){
     $mail->Port = '587';
 
     //SETTING Email
-    $mail->setFrom('email@buenaroa.store', 'Buenaroa');
-    $mail->addAddress($sender);
+    $mail->setFrom('email@buenaroa.store', 'Buenaroa'); //Senders Email
+    $mail->addAddress($sender); //Receivers Email
     $mail->isHTML(true);
     $mail->Subject = $subject;
-    $mail->Body = $message;
+    $mail->Body = "We received your Contact!";
     $mail->send();
 
     echo "Email Sent!";
