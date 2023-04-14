@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 <?php
 //SMTP
 
@@ -59,10 +68,12 @@ if(isset($_POST["submit"])){
     $mail->setFrom('email@buenaroa.store', 'Buenaroa'); //Senders Email
     $mail->addAddress($sender); //Receivers Email
     $mail->isHTML(true);
-    $mail->Subject = $subject;
-    $mail->Body = "We received your Contact!";
+    $mail->Subject = "Good Day, " . $name;
+    $mail->Body = "Thank you for contacting us! We will get back to you shortly";
     $mail->send();
 
-    echo "Email Sent!";
+    header('Location: index.php');
 }
 ?>
+</body>
+</html>
