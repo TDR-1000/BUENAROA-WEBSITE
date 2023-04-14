@@ -1,7 +1,7 @@
 <?php
 //PHP code to sent contact form to both client and owner.
 if (isset($_POST['submit'])){ //Check if user enter data
-    $mailto = "email@buenaroa.store"; //Company email
+    $mailto = "carylsntg@gmail.com"; //Company email
     //Client Sending Message
     
     $from = $_POST['email']; //Senders Email Address
@@ -12,7 +12,7 @@ if (isset($_POST['submit'])){ //Check if user enter data
 
     //Company Sending Response Email to the Client
     $subjecttwo = "You Message is Submitted Successfully";
-    $messagetwo = "Goods Day, " . $name. "\n\n" . "Thank you for contacting us! We will get back to you shortly"; 
+    $messagetwo = "Good Day, " . $name. "\n\n" . "Thank you for contacting us! We will get back to you shortly"; 
     $headerstwo = "From: " . $mailto; 
 
     $result = mail($mailto, $subject, $message, $headers);
