@@ -68,8 +68,8 @@ if(isset($_POST["submit"])){
     $mail->setFrom('email@buenaroa.store', 'Buenaroa'); //Senders Email
     $mail->addAddress($sender); //Receivers Email
     $mail->isHTML(true);
-    $mail->Subject = "Good Day, " . $name;
-    $mail->Body = "Thank you for contacting us! We will get back to you shortly";
+    $mail->Subject = "Good Day!";
+    $mail->Body = "Thank you for contacting us! We will get back to you shortly. Have a wonderful day " . $name;
     $mail->send();
 
     header('Location: index.php');
