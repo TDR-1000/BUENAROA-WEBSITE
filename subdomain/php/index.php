@@ -225,7 +225,7 @@ if (isset($_POST['submit'])){ //Check if user enter data
 
         <div class="row mt-5 justify-content-center">
           <div class="col-lg-10">
-            <form action="" method="post" role="form" class="php-email-form">
+            <form action="contact.php" method="post" role="form" class="php-email-form">
               <!-- @csrf -->
               <div class="row">
                 <div class="col-md-6 form-group">
