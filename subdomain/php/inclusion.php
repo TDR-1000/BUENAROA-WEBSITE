@@ -8,7 +8,7 @@
     <title>Buenaroa</title>
 </head>
 <body>
-<?php include('navigation.php');?>
+<?php require('navigation.php');?>
 <h1>H1</h1>
 </body>
 </html>
