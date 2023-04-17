@@ -9,6 +9,9 @@
 </head>
 <body>
 <?php require('navigation.php');?>
+<div class="Page">
 <h1>H1</h1>
+</div>
+
 </body>
 </html>
