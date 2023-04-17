@@ -108,7 +108,7 @@ if (isset($_POST['submit'])){ //Check if user enter data
               <li><a href="#">Sound System and Lights Rental</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto " href="#portfolio">Inclusions</a></li>
+          <li><a class="nav-link scrollto" id="inclusion-nav" href="#portfolio"><b>Inclusions</b></a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
       
