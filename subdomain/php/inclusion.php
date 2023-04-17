@@ -1,2 +1,2 @@
 <?php include('navigation.php');?>
-<h1>Inclusion</h1>
+<section>Inclusion</section>
