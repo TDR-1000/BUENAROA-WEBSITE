@@ -86,7 +86,7 @@ if (isset($_POST['submit'])){ //Check if user enter data
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              {{-- <li class="dropdown"><a href="#"><span>Event Styling</span> <i class="bi bi-chevron-right"></i></a> --}}
+               <!-- <li class="dropdown"><a href="#"><span>Event Styling</span> <i class="bi bi-chevron-right"></i></a>  -->
               <li class="dropdown"><a href="#"><span>Event Planning and Styling</span></a>
                 <!-- <ul>
                   <li><a href="#">Balloon Arrangement</a></li>
