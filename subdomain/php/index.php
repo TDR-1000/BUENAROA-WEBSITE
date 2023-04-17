@@ -82,36 +82,36 @@ if (isset($_POST['submit'])){ //Check if user enter data
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Gallery</a></li>
-          <li class="dropdown"><a href="#"><span>Inclusions</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              
-              <li class="dropdown"><a href="#"><span>Event Styling</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
+              {{-- <li class="dropdown"><a href="#"><span>Event Styling</span> <i class="bi bi-chevron-right"></i></a> --}}
+              <li class="dropdown"><a href="#"><span>Event Planning and Styling</span></a>
+                <!-- <ul>
                   <li><a href="#">Balloon Arrangement</a></li>
                   <li><a href="#">Flower Arrangement</a></li>
                   <li><a href="#">Back Drop</a></li>
                   <li><a href="#">Machines</a></li>
-                </ul>
+                </ul> -->
               </li>
-              <li class="dropdown"><a href="#"><span>Catering Services</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
+              <li class="dropdown"><a href="#"><span>Catering Services</span></a>
+               <!-- <ul>
                   <li><a href="#">Appetizers</a></li>
                   <li><a href="#">Lunch</a></li>
                   <li><a href="#">Snacks</a></li>
                   <li><a href="#">Drinks</a></li>
                   <li><a href="#">Dessert</a></li>
-                </ul>
+                </ul>  -->
               </li>
               
               <li><a href="#">Sound System and Lights Rental</a></li>
             </ul>
           </li>
+          <li><a class="nav-link scrollto " href="#portfolio">Inclusions</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
+      
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
