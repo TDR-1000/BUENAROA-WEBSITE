@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+    <?php 
+    include('navigation.php');
+    ?>
     <h1>THIS IS INCLUSION</h1>
 </body>
 </html>
