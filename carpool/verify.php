@@ -29,7 +29,7 @@ function sendemail_verify($userFirstName,$userEmail,$verify_token){
      $mail->Host = 'smtp.hostinger.com';
      $mail->SMTPAuth = true;
      $mail->Username = 'carpool@buenaroa.store';
-     $mail->Password = 'Carpool.Buenaroa10'; //Gmail App Password
+     $mail->Password = 'Carpool.Store10'; //Gmail App Password
      $mail->SMTPSecure = 'tls';
      $mail->Port = '587';
  
