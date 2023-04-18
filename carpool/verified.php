@@ -1,5 +1,3 @@
-<h1>Hello</h1>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,10 +25,10 @@
             while ($data = $verified_query_run->fetch_assoc()) :
             ?>
                 <tr>
-                    <th scope="row"><?php echo $data['uID']; ?></th>
-                    <td><?php echo $data['uUsername']; ?></td>
-                    <td><?php echo $data['uFirstName']; ?></td>
-                    <td><?php echo $data['uLastName']; ?></td>
+                    <th scope="row"><?php echo $data['uID'] ?></th>
+                    <td><?php echo $data['uUsername'] ?></td>
+                    <td><?php echo $data['uFirstName'] ?></td>
+                    <td><?php echo $data['uLastName'] ?></td>
                 </tr>
         </tbody>
     <?php endwhile; ?>
