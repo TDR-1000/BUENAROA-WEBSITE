@@ -1,5 +1,5 @@
 <?php
-include('connection.php');
+//include('connection.php');
 $verified = "SELECT * FROM users WHERE verify_status = '1'";
 $verified_query_run = mysqli_query($conn, $verified);
 
