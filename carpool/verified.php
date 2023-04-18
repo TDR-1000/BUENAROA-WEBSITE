@@ -1,10 +1,11 @@
 <?php
 include('connection.php');
-//$verified = "SELECT * FROM users WHERE verify_status = '1'";
-//$verified_query_run = mysqli_query($conn, $verified);
+$verified = "SELECT * FROM users WHERE verify_status = '1'";
+$verified_query_run = mysqli_query($conn, $verified);
 ?>
 <h1>Hello</h1>
-<!-- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +14,6 @@ include('connection.php');
     <title>Verified Users</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
-
 <body>
     <table class="table">
         <thead>
@@ -40,4 +40,4 @@ include('connection.php');
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 
-</html> -->
+</html>
