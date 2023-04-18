@@ -22,7 +22,7 @@
             include('connection.php');
             $verified = "SELECT * FROM users WHERE verify_status = '1'";
             $verified_query_run = mysqli_query($conn, $verified);
-            while ($data = $verified_query_run->fetch_assoc()) :
+            while($data = $verified_query_run->fetch_assoc()):
             ?>
                 <tr>
                     <th scope="row"><?php echo $data['uID'] ?></th>
