@@ -57,15 +57,15 @@ if(isset($_POST["submit"])){
     $mail = new PHPMailer(true);
 
     $mail->isSMTP();
-    $mail->Host = 'smtp.hostinger.com';
+    $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'connect@buenaroa.store';
-    $mail->Password = 'Buenaroa.Connect10'; //Email Password
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = '587';
+    $mail->Username = 'buenaroa.connect@gmail.com';
+    $mail->Password = 'clkbqhdlrpcnjzsw'; //Email Password
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = '465';
 
     //SETTING Email
-    $mail->setFrom('email@buenaroa.store', 'Buenaroa'); //Senders Email
+    $mail->setFrom('buenaroa.connect@gmail.com', 'Buenaroa'); //Senders Email
     $mail->addAddress($sender); //Receivers Email
     $mail->isHTML(true);
     $mail->Subject = "Good Day!";
