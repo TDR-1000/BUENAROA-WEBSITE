@@ -58,7 +58,7 @@ if(isset($_POST["submit"])){
 
     $mail->isSMTP();
     $mail->Host = 'smtp.hostinger.com';
-    $mail->SMTPAuth = 'true';
+    $mail->SMTPAuth = true;
     $mail->Username = 'connect@buenaroa.store';
     $mail->Password = 'Buenaroa.Connect10'; //Email Password
     $mail->SMTPSecure = 'tls';
