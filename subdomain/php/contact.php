@@ -58,9 +58,9 @@ if(isset($_POST["submit"])){
 
     $mail->isSMTP();
     $mail->Host = 'smtp.hostinger.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = 'email@buenaroa.store';
-    $mail->Password = 'Buenaroa.Store10'; //Gmail App Password
+    $mail->SMTPAuth = 'true';
+    $mail->Username = 'connect@buenaroa.store';
+    $mail->Password = 'Buenaroa.Connect10'; //Gmail App Password
     $mail->SMTPSecure = 'tls';
     $mail->Port = '587';
 

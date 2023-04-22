@@ -26,7 +26,7 @@ class HelloMail extends Mailable
 
     public function envelope(){
         return new Envelope(
-            from: new Address('email@buenaroa.store' , 'Buenaroa'),
+            from: new Address('connect@buenaroa.store' , 'Buenaroa'),
             subject: $this->subject, 
         );
     }
