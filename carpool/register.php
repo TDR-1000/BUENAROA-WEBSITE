@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +12,6 @@
 </head>
 <body>
 <?php
-session_start();
 //PHP MAILER
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -83,7 +85,7 @@ if (isset($_POST["submit"])) {
 
         if($query_run){
 
-            sendemail_verify($userFirstName , $userEmail, $verify_token);
+            sendemail_verify("$userFirstName" , "$userEmail", "$verify_token");
             $_SESSION['status'] ="Registration Successful! Please Verify in Email!";
             header("Location: register.php");
         }else{
@@ -94,7 +96,7 @@ if (isset($_POST["submit"])) {
     }
 
    
-    header('Location: index.php');
+   // header('Location: index.php');
 
    
 }
