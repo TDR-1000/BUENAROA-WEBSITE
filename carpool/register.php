@@ -1,7 +1,7 @@
 <?php
 session_start();
-echo "hello";
 include('connection.php');
+echo "hello";
 
 //PHP MAILER
 use PHPMailer\PHPMailer\PHPMailer;
