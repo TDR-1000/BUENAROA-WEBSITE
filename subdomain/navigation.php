@@ -37,7 +37,7 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto" id="inclusion-nav" href="inclusion.php"><b>Inclusions</b></a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="index.php#contact">Contact</a></li>
         </ul>
       
         <i class="bi bi-list mobile-nav-toggle"></i>
