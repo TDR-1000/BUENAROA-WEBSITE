@@ -27,7 +27,7 @@ function sendemail_verify($userFirstName,$userEmail,$verify_token){
 
      $mail->isSMTP();
      $mail->Host = 'smtp.gmail.com';
-     $mail->SMTPAuth = true;
+     $mail->SMTPAuth = 'true';
      $mail->Username = 'carpool.connects@gmail.com';
      $mail->Password = 'keeyhrfmkuhuuayj'; //Gmail App Password
      $mail->SMTPSecure = 'ssl';
@@ -48,8 +48,7 @@ function sendemail_verify($userFirstName,$userEmail,$verify_token){
      $mail->isHTML(true);
      $mail->Subject = "Good Day!";
      $mail->Body = $emailbody;
-     $mail->send();
-   
+     $mail->send();   
 }
 if (isset($_POST["submit"])) {
     //DECLARATION OF NAMES 
