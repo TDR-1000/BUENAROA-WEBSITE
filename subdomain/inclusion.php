@@ -11,10 +11,19 @@
     <?php
     include('navigation.php')
     ?>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+        <div class="hero-container">
+            <h1>BUENAROA'S EVENT AND CATERING SERVICES</h1>
+            <h2>Turning DREAMS into REALITY</h2>
+            <a href="#about" class="btn-get-started scrollto">Know More</a>
+        </div>
+    </section><!-- End Hero -->
 
-    <h1>Inclusion Page</h1>
-    <?php
-    include('js.php');
-    ?>
+    <main id="main">
+        <?php
+        include('js.php');
+        ?>
 </body>
+
 </html>
