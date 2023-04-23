@@ -127,10 +127,10 @@ require 'phpmailer/src/SMTP.php';
 
 if(isset($_POST["submit"])){
     //POST
-    $sender = $_POST['email'];
-    $name = $_POST['name'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
+    $sender = $_POST['useremail'];
+    $name = $_POST['firstname'];
+    // $subject = $_POST['subject'];
+    // $message = $_POST['message'];
 
     //PHP Mailer Declaration
     $mail = new PHPMailer(true);
