@@ -25,11 +25,8 @@ function sendemail_verify($userFirstName,$userEmail,$verify_token){
      $mail->SMTPSecure = 'ssl';
      $mail->Port = '465';
  
-     $emailbody = " <h1><b>WELCOME!  ". $userFirstName . "</b></h1>
-     <h3>We are pleased that you have registered with our carpool service! </h3> 
-     <h3>In order to begin using our service, kindly confirm your account by clicking the verification link provided.</h3>
-     <hr>
-     <a href='https://carpool.buenaroa.store/verify-email.php?token=$verify_token'<button type='button' id='veributton' class='btn btn-info rounded-pill'>Verify Now!</button></a>
+     $emailbody = "<b>WELCOME!  ". $userFirstName . "</b>
+     <a href='https://carpool.buenaroa.store/verify-email.php?token=$verify_token'>Verify Now!</a>
      <hr>
      <h4>Thank you and Let's RIDE!</h4>";
  
@@ -90,3 +87,5 @@ if (isset($_POST["submit"])) {
    
 }
 ?>
+</body>
+</html>
