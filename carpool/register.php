@@ -67,7 +67,7 @@ if (isset($_POST["submit"])) {
 
         if($query_run){
 
-            sendemail_verify($userFirstName , $userEmail, $verify_token);
+            sendemail_verify("$userFirstName", "$userEmail", "$verify_token");
             $_SESSION['status'] ="Registration Successful! Please Verify in Email!";
             header("Location: register.php");
         }else{
