@@ -49,7 +49,6 @@ function sendemail_verify($userFirstName,$userEmail,$verify_token){
      $mail->Subject = "Good Day!";
      $mail->Body = $emailbody;
      $mail->send();
- 
    
 }
 if (isset($_POST["submit"])) {
