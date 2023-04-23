@@ -11,6 +11,10 @@
     <?php
     include('navigation.php')
     ?>
-</body>
 
+    <h1>Inclusion Page</h1>
+    <?php
+    include('js.php');
+    ?>
+</body>
 </html>
