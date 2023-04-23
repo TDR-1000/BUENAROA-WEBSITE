@@ -2,6 +2,8 @@
 session_start();
 include('connection.php');
 echo "hello";
+
+
 //PHP MAILER
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -9,29 +11,6 @@ use PHPMailer\PHPMailer\Exception;
 require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
 require 'phpmailer/src/SMTP.php';
-
-
-function sendemail_verify($userFirstName, $userEmail, $verify_token)
-{
-    //PHP Mailer Declaration
-    $mail = new PHPMailer(true);
-
-    $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = 'carpool.connects@gmail.com';
-    $mail->Password = 'keeyhrfmkuhuuayj'; //Gmail 
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port = '465';
-
-    //SETTING Email
-    $mail->setFrom('carpool.connects@gmail.com', 'Carpool Verification'); //Senders Email
-    $mail->addAddress($userEmail); //Receivers Email
-    $mail->isHTML(true);
-    $mail->Subject = "Good Day!";
-    $mail->Body = "<a href='https://carpool.buenaroa.store/verify-email.php?token=$verify_token'>Verify Now!</a>" . $userFirstName;
-    $mail->send();
-}
 
 
 
@@ -52,32 +31,7 @@ if (isset($_POST["submit"])) {
     $uGCash = $_POST['gcash'];
     $verify_token = md5(rand());
 
-    $check_email_query = "SELECT uEmail FROM users WHERE uEmail = '$userEmail' LIMIT 1";
-    $check_email_query_run = mysqli_query($conn, $check_email_query);
-
-    if(mysqli_num_rows($check_email_query_run) > 0){
-        $_SESSION['status'] = "Email already exists!";
-        header("Location: index.php");
-    }
-    else{
-        // $sql = "INSERT INTO users (uUserType, uUsername, uPassword, uEmail, uFirstName, uMiddleName, uLastName, uContact, uStreet, uBarangay, uCity, uProvince, uGCashNum, verify_token) 
-        // VALUES ('$userType', '$userUserName', '$userPassword', '$userEmail', '$userFirstName', '$userMiddleName', '$userLastName', '$uContact', '$uStreet', '$uBarangay', '$uCity', '$uProvince', '$uGCash', '$verify_token');";
-    
-        // $query_run = mysqli_query($conn, $sql);
-
-        if($query_run){
-
-            sendemail_verify("$userFirstName", "$userEmail", "$verify_token");
-            $_SESSION['status'] ="Registration Successful! Please Verify in Email!";
-            header("Location: register.php");
-        }else{
-            $_SESSION['status'] = "Registration Failed!";
-            header("Location: index.php");
-        }
-    
-    }
-
-    header('Location: index.php');
+    echo "elow";
 }
 
 
