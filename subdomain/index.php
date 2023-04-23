@@ -75,7 +75,7 @@ if (isset($_POST['submit'])){ //Check if user enter data
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html"><img src="assets/img/logobuena.png"></a></h1>
+        <h1><a href="index.php"><img src="assets/img/logobuena.png"></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -83,11 +83,11 @@ if (isset($_POST['submit'])){ //Check if user enter data
       <nav id="navbar" class="navbar">
         <ul>
         <li><a class="nav-link scrollto active" href="index.php">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.php#about">About</a></li>
           <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
                <!-- <li class="dropdown"><a href="#"><span>Event Styling</span> <i class="bi bi-chevron-right"></i></a>  -->
-              <li class="dropdown"><a href="#"><span>Event Planning and Styling</span></a>
+              <li class="dropdown"><a href="eventgallery.php"><span>Event Planning and Styling</span></a>
                 <!-- <ul>
                   <li><a href="#">Balloon Arrangement</a></li>
                   <li><a href="#">Flower Arrangement</a></li>
@@ -95,7 +95,7 @@ if (isset($_POST['submit'])){ //Check if user enter data
                   <li><a href="#">Machines</a></li>
                 </ul> -->
               </li>
-              <li class="dropdown"><a href="#"><span>Catering Services</span></a>
+              <li class="dropdown"><a href="catergallery.php"><span>Catering Services</span></a>
                <!-- <ul>
                   <li><a href="#">Appetizers</a></li>
                   <li><a href="#">Lunch</a></li>
@@ -105,11 +105,11 @@ if (isset($_POST['submit'])){ //Check if user enter data
                 </ul>  -->
               </li>
               
-              <li><a href="#">Sound System and Lights Rental</a></li>
+              <li><a href="soundgallery.php">Sound System and Lights Rental</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" id="inclusion-nav" href="inclusion.php"><b>Inclusions</b></a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="index.php#contact">Contact</a></li>
         </ul>
       
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -208,7 +208,7 @@ if (isset($_POST['submit'])){ //Check if user enter data
                 <div class="col-lg-4 info mt-4 mt-lg-0">
                   <i class="bi bi-envelope"></i>
                   <h4>Email:</h4>
-                  <p>carylsntg@gmail.com<br>yvette_marquez0722@yahoo.com</p>
+                  <p>buenaroa.connect@gmail.com<br>yvette_marquez0722@yahoo.com</p>
                 </div>
 
                 <div class="col-lg-4 info mt-4 mt-lg-0">
