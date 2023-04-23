@@ -1,6 +1,6 @@
 <?php
-echo "hello";
 session_start();
+echo "hello";
 include('connection.php');
 
 //PHP MAILER
