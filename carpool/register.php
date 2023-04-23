@@ -1,7 +1,7 @@
 <?php
 //session_start();
 ?>
-<?
+<?php
 // //PHP MAILER
 // use PHPMailer\PHPMailer\PHPMailer;
 // use PHPMailer\PHPMailer\Exception;
