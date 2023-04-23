@@ -1,9 +1,3 @@
-<?php
-include('connection.php');
-$verified = "SELECT * FROM users WHERE verify_status='1'";
-$verified_query_run = mysqli_query($conn, $verified);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +21,11 @@ $verified_query_run = mysqli_query($conn, $verified);
             </tr>
         </thead>
         <tbody>
+
             <?php
+            include('connection.php');
+            $verified = "SELECT * FROM users WHERE verify_status='1'";
+            $verified_query_run = mysqli_query($conn, $verified);
             while ($data = $verified_query_run->fetch_assoc()) :
             ?>
                 <tr>
