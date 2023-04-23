@@ -1,7 +1,6 @@
 <?php
 session_start();
-?>
-<?php
+include('connection.php');
 
 //PHP MAILER
 use PHPMailer\PHPMailer\PHPMailer;
@@ -10,7 +9,7 @@ use PHPMailer\PHPMailer\Exception;
 require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
 require 'phpmailer/src/SMTP.php';
-
+echo "hello";
 function sendemail_verify($userFirstName, $userEmail, $verify_token)
 {
     //PHP Mailer Declaration
