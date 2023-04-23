@@ -60,10 +60,10 @@ if (isset($_POST["submit"])) {
         header("Location: index.php");
     }
     else{
-        $sql = "INSERT INTO users (uUserType, uUsername, uPassword, uEmail, uFirstName, uMiddleName, uLastName, uContact, uStreet, uBarangay, uCity, uProvince, uGCashNum, verify_token) 
-        VALUES ('$userType', '$userUserName', '$userPassword', '$userEmail', '$userFirstName', '$userMiddleName', '$userLastName', '$uContact', '$uStreet', '$uBarangay', '$uCity', '$uProvince', '$uGCash', '$verify_token');";
+        // $sql = "INSERT INTO users (uUserType, uUsername, uPassword, uEmail, uFirstName, uMiddleName, uLastName, uContact, uStreet, uBarangay, uCity, uProvince, uGCashNum, verify_token) 
+        // VALUES ('$userType', '$userUserName', '$userPassword', '$userEmail', '$userFirstName', '$userMiddleName', '$userLastName', '$uContact', '$uStreet', '$uBarangay', '$uCity', '$uProvince', '$uGCash', '$verify_token');";
     
-        $query_run = mysqli_query($conn, $sql);
+        // $query_run = mysqli_query($conn, $sql);
 
         if($query_run){
 
