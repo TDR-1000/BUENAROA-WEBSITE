@@ -10,9 +10,9 @@ if(isset($_GET['token'])){
     if(mysqli_num_rows($verify_query_run) > 0){
         $row = mysqli_fetch_array($verify_query_run);
         
-        if($row['verify_status'] == 'No'){
+        if($row['verify_status'] == 0){
             $clicked_token = $row['verify_token'];
-            $update_query = "UPDATE users SET verify_status='Yes' WHERE verify_token='$clicked_token' LIMIT 1";
+            $update_query = "UPDATE users SET verify_status='1' WHERE verify_token='$clicked_token' LIMIT 1";
             $update_query_run = mysqli_query($conn, $update_query);
 
             if($update_query_run){
