@@ -3,13 +3,13 @@
 
 <head>
     <?php
-    include('header.php');
+    include('components/header.php');
     ?>
 </head>
 
 <body>
     <?php
-    include('navigation.php')
+    include('components/navigation.php')
     ?>
     <!-- ======= Hero Section ======= -->
     <section id="hero">
@@ -21,7 +21,7 @@
 
     <main id="main">
         <?php
-        include('js.php');
+        include('components/js.php');
         ?>
 </body>
 
